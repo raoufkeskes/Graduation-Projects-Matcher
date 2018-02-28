@@ -1,0 +1,470 @@
+
+
+/*-- Reset Code --*/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+/* start editing from here */
+a{text-decoration:none;}
+.txt-rt{text-align:right;}/* text align right */
+.txt-lt{text-align:left;}/* text align left */
+.txt-center{text-align:center;}/* text align center */
+.float-rt{float:right;}/* float right */
+.float-lt{float:left;}/* float left */
+.clear{clear:both;}/* clear float */
+.pos-relative{position:relative;}/* Position Relative */
+.pos-absolute{position:absolute;}/* Position Absolute */
+.vertical-base{	vertical-align:baseline;}/* vertical align baseline */
+.vertical-top{	vertical-align:top;}/* vertical align top */
+.underline{	padding-bottom:5px;	border-bottom: 1px solid #eee; margin:0 0 20px 0;}/* Add 5px bottom padding and a underline */
+nav.vertical ul li{	display:block;}/* vertical menu */
+nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
+img{max-width:100%;}
+/*img[width],img[height]{width:auto;height:auto;} wordpress hack to reset the attributes (while making responsive) */
+/*-- Reset Code --*/
+
+/*-- Fonts --*/
+@font-face{
+	font-family: 'Lemon-Regular';
+	src:url(../fonts/Lemon-Regular.ttf) format('truetype');
+}
+@font-face{
+	font-family: 'Oswald-Light';
+	src:url(../fonts/Oswald-Light.ttf) format('truetype');
+}
+@font-face{
+	font-family: 'Oswald-Regular';
+	src:url(../fonts/Oswald-Regular.ttf) format('truetype');
+}
+/*-- Fonts --*/
+
+/*-- Index-Page-Styling --*/
+
+body {
+	background: url("../images/bg.jpg") no-repeat;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+	margin-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: Lemon-Regular;
+    color: #105986;
+}
+
+
+
+
+.signin {
+    width: 25%;
+    margin: 80px auto 0;
+    background-color: rgba(56, 49, 49, 0.13);
+    padding: 40px;
+    border: 2px ridge rgba(238, 238, 238, 0.13);
+    border-radius: 5px;
+    -moz-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	-webkit-box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	box-shadow: 0 -5px 10px 1px rgba(16, 16, 16, 0.57);
+	border-bottom: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+
+input.user {
+    width: 83%;
+    padding: 10px 10px 10px 45px;
+    background: rgba(23, 24, 25, 0.29) url("../images/user.png") no-repeat 10px 10px;
+    border: 1px solid #7B7474;
+    border-radius: 5px;
+    font-family: Oswald-Light;
+    font-size: 18px;
+    color: #FFF;
+    outline: none;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+input.pass {
+    width: 83%;
+    padding: 10px 10px 10px 45px;
+    background: rgba(23, 24, 25, 0.29) url("../images/pass.png") no-repeat 11px 10px;
+    border: 1px solid #7B7474;
+    border-radius: 5px;
+    font-family: Oswald-Light;
+    font-size: 18px;
+    color: #FFF;
+    outline: none;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+}
+
+label {
+    font-family: Oswald-Light;
+    color: #FFF;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 20px;
+    outline: none;
+    border: 1px solid #7B7474;
+    font-family: Oswald-Regular;
+    font-size: 17px;
+    color: #FFFFFF;
+    background-color: rgba(23, 24, 25, 0.24);
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+	background-color: rgba(16, 89, 134, 0.52);
+	-webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 100px;
+}
+.footer p {
+    font-family: Oswald-Regular;
+    color: #FFF;
+}
+.footer a {
+    font-family: Oswald-Regular;
+    color: #FFF;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+	color: #190909;
+}
+
+/*-- Index-Page-Styling --*/
+
+/*--- Responsinator Code ---*/
+
+@media screen and (max-width: 1920px) {
+	.signin {
+    	width: 23%;
+	}
+	input.user {
+    	width: 87%;
+	}
+	input.pass {
+    	width: 87%;
+	}
+}
+
+@media screen and (max-width: 1680px) {
+	input.user {
+	    width: 85%;
+	}
+	input.pass {
+	    width: 85%;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	input.user {
+    	width: 84%;
+	}
+	input.pass {
+    	width: 84%;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.signin {
+    	width: 26%;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	input.user {
+    	width: 83.5%;
+	}
+	input.pass {
+    	width: 83.5%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.signin {
+    	width: 27%;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.signin {
+    	width: 30%;
+	}
+		input.user {
+	    width: 84%;
+	}
+	input.pass {
+	    width: 84%;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	input.user {
+		width: 82.5%;
+	}
+	input.pass {
+    	width: 82.5%;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	input.user {
+    	width: 81.5%;
+	}
+	input.pass {
+    	width: 81.5%;
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.signin {
+    	width: 31%;
+	}
+	.footer {
+    	margin-top: 80px;
+	}
+}
+
+@media screen and (max-width: 966px) {
+	.signin {
+    	width: 33%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.signin {
+		width: 35%;
+	}
+}
+
+@media screen and (max-width: 853px) {
+	.signin {
+    	width: 38%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.signin {
+    	width: 40%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.signin {
+    	width: 40%;
+	}
+	input.user {
+    	width: 81%;
+	}
+	input.pass {
+    	width: 81%;
+	}
+}
+
+@media screen and (max-width: 736px) {
+	.signin {
+    	width: 42%;
+	}
+}
+
+@media screen and (max-width: 667px) {
+	.signin {
+    	width: 47%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	input.user {
+	    width: 80%;
+	}
+	input.pass {
+	    width: 80%;
+	}
+}
+
+@media screen and (max-width: 603px) {
+	.signin {
+    	width: 51%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.signin {
+    	width: 51%;
+	}
+}
+
+@media screen and (max-width: 568px) {
+	h1 {
+	    font-size: 35px;
+	    margin: 35px 0 0;
+	}
+	.signin {
+    	width: 50%;
+    	margin: 60px auto 0;
+	}
+}
+
+@media screen and (max-width: 533px) {
+	.signin {
+    	width: 58%;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.signin {
+    	width: 63%;
+	}
+}
+
+@media screen and (max-width: 441px) {
+	h1 {
+	    font-size: 35px;
+	    margin: 50px 0;
+	}
+	.signin {
+    	width: 75%;
+    	margin: 50px auto;
+   	    padding: 25px;
+	}
+	input.user {
+	    width: 82%;
+	    padding: 7px 10px 7px 45px;
+	    font-size: 17px;
+	    background: rgba(23, 24, 25, 0.29) url("../images/user.png") no-repeat 10px 6px;
+	}
+	input.pass {
+	    width: 82%;
+	    padding: 7px 10px 7px 45px;
+	    font-size: 17px;
+        background: rgba(23, 24, 25, 0.29) url("../images/pass.png") no-repeat 10px 6px;
+	}
+	input[type="submit"] {
+    	padding: 7px 0;
+	}
+	.footer {
+    	margin: 100px 15px 0;
+	}
+	.footer p {
+    	font-size: 14px;
+	}
+}
+
+@media screen and (max-width: 384px) {
+	h1 {
+    	font-size: 32px;
+	}
+	input.user {
+	    width: 79%;
+	}
+	input.pass {
+	    width: 79%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	h1 {
+    	font-size: 30px;
+	}
+	.signin {
+    	width: 75%;
+    	padding: 25px;
+	}
+	input.user {
+	    width: 79%;
+	    padding: 7px 10px 7px 45px;
+	    font-size: 16px;
+        background: rgba(23, 24, 25, 0.29) url("../images/user.png") no-repeat 10px 6px;
+	}
+	input.pass {
+	    width: 79%;
+	    padding: 7px 10px 7px 45px;
+        font-size: 16px;
+        background: rgba(23, 24, 25, 0.29) url("../images/pass.png") no-repeat 10px 6px;
+	}
+	input[type="submit"] {
+    	padding: 7px 0;
+	}
+	.footer {
+    	margin: 100px 10px 0;
+	}
+	.footer p {
+    	font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	input.user {
+	    width: 78%;
+	}
+	input.pass {
+	    width: 78%;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	h1 {
+    	font-size: 27px;
+    	margin: 35px 0;
+    }
+	.signin {
+    	width: 80%;
+   	    margin: 40px auto;
+    	padding: 20px;
+    }
+	input.user {
+	    width: 76.5%;
+	    padding: 7px 10px 7px 45px;
+	    font-size: 16px;
+	    background: rgba(23, 24, 25, 0.29) url("../images/user.png") no-repeat 10px 6px;
+	}
+	input.pass {
+	    width: 76.5%;
+	    padding: 7px 10px 7px 45px;
+	    font-size: 16px;
+	    background: rgba(23, 24, 25, 0.29) url("../images/pass.png") no-repeat 10px 6px;
+	}
+	input[type="submit"] {
+	    padding: 7px 0;
+	}
+	.footer {
+		margin: 90px 15px 0;
+	}
+	.footer p {
+    	font-size: 13px;
+	}
+}
+
+/*--- Responsinator Code ---*/

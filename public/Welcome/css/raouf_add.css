@@ -1,0 +1,386 @@
+
+
+
+
+
+
+
+.banner-text
+{
+  text-align: center;
+}
+
+
+
+.navbar
+{
+  font-family: "Verdana";
+}
+
+
+
+.cd-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(232, 98, 86, 0.8) url(/img/cd-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.cd-top.cd-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+
+.no-touch .cd-top:hover {
+  background-color: #e86256;
+  opacity: 1;
+}
+@media only screen and (min-width: 768px) {
+  .cd-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .cd-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+
+
+
+/*#liste-obj
+{     
+    background: url('../img/lst.jpg') no-repeat;
+     background-size: cover ;
+}*/
+
+
+
+#ContactUsCustomized
+{
+    border-style: solid;
+    border-width: 5px;
+    width: 70%;
+    margin-left: 15%;
+    padding-bottom: 20px;
+    background-color: rgba(0,0,0,0.5) ;
+}
+
+.testimonials-post
+{
+  color: #42f4b3 ;
+}
+
+.navbar-default .navbar-nav > .active > a, 
+ .navbar-default .navbar-nav > .active > a:hover, 
+ .navbar-default .navbar-nav > .active > a:focus {
+      color: #000;
+      background: #e7e7e7 ;
+      font-size: 16px ;
+ }
+
+
+/*Footer */
+
+#myFooter {
+    background-color: #182c39;
+    color: white;
+    padding-top: 20px;
+}
+
+#map-container {
+    height: 240px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#myFooter .row {
+    margin: 0 85px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #10222e;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter .container {
+    width: auto;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a {
+    color: #d2d1d1;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: white;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 38px;
+}
+
+#myFooter .fa {
+    font-size: 30px;
+    margin-right: 15px;
+    margin-left: 20px;
+    background-color: white;
+    color: #182c39;
+    border-radius: 51%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 31px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#myFooter .fa-facebook:hover {
+    color: #2b55ff;
+}
+
+#myFooter .fa-facebook:focus {
+    color: #2b55ff;
+}
+
+#myFooter .fa-google-plus:hover {
+    color: red;
+}
+
+#myFooter .fa-google-plus:focus {
+    color: red;
+}
+
+#myFooter .fa-twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .fa-twitter:focus {
+    color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+    #myFooter .row {
+        margin: 0;
+    }
+}
+
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content{
+   flex: 1 0 auto;
+   -webkit-flex: 1 0 auto;
+   min-height: 200px;
+}
+
+#myFooter{
+   flex: 0 0 auto;
+   -webkit-flex: 0 0 auto;
+}
+
+/*END Footer-*/
+
+.contact-sec h2
+{
+  word-wrap: break-word;
+}
+
+
+@media (min-width: 5px) and (max-width:400px)
+{
+    .contact-sec h2
+    {
+      font-size: 14px ;
+    }
+    .contact-sec p
+    {
+      font-size: 10px ;
+    }
+    .title-text
+    {
+      font-size: 16px ;
+    }
+    .title
+    {
+      font-size: 16px ;
+    }
+    .btn-primary
+    {
+      font-size: 10px  ;
+    }
+    .banner-text
+    {
+      font-size: 16px  ;
+    }
+}
+
+/* 3 buttons */
+
+.buttons
+{
+  margin-bottom: 24vh ;
+}
+/* Global Button Styles */
+a.animated-button:link, a.animated-button:visited {
+  
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  color: #fff;
+  font-size:14px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: .08em;
+  border-radius: 0;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+a.animated-button:link:after, a.animated-button:visited:after {
+
+  content: "";
+  position: absolute;
+  height: 0%;
+  left: 50%;
+  top: 50%;
+  width: 150%;
+  z-index: -1;
+  -webkit-transition: all 0.75s ease 0s;
+  -moz-transition: all 0.75s ease 0s;
+  -o-transition: all 0.75s ease 0s;
+  transition: all 0.75s ease 0s;
+}
+a.animated-button:link:hover, a.animated-button:visited:hover {
+  color: #fff;
+  text-shadow: none;
+
+}
+a.animated-button:link:hover:after, a.animated-button:visited:hover:after {
+  height: 450%;
+}
+a.animated-button:link, a.animated-button:visited {
+  position: relative;
+  display: block;
+  margin: 30px auto 0;
+  padding: 14px 15px;
+  color: #000;
+  font-size:28px;
+  border-radius: 0;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: .08em;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+
+}
+
+
+
+a.animated-button.victoria-four {
+  border: 2px solid #D24D57;
+  height: 200px ;
+}
+a.animated-button.victoria-four:after {
+  background: #D24D57;
+  opacity: .5;
+
+  -moz-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  -ms-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg);
+  transform: translateY(-50%) translateX(-50%) rotate(90deg);
+}
+a.animated-button.victoria-four:hover:after {
+  opacity: 1;
+  height: 600% !important;
+}
+
+
+@media (min-width: 5px) and (max-width:400px)
+{
+    a.animated-button.victoria-four
+    {
+      width: 150px ;
+      height: 100px ;
+      font-size: 10px ;
+    }
+}
+
+/* end 3 buttons */ 

@@ -1,0 +1,1 @@
+@extends('user.Pages.CreatePost')

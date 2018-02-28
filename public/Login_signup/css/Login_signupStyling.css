@@ -1,0 +1,554 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/*raouf Styling */
+html {
+  overflow-y: scroll;
+}
+
+::selection {
+  background: #1ab188; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #1ab188; /* Gecko Browsers */
+}
+
+body {
+  background: #c1bdba;
+  font-family: 'Titillium Web', sans-serif;
+  background-attachment: fixed;
+  background-size: cover ;
+  
+}
+
+/*
+{
+   -webkit-transform: translateY(-18px);
+          transform: translateY(-18px);
+  left: 2px;
+  font-size: 14px;
+
+}*/
+.error-msg {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+   color: #D8000C;
+  background-color: #FFBABA;
+}
+
+.success-msg {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 3px 3px 3px 3px;
+  color: #1ab188;
+  background-color: #DFF2BF;
+}
+
+.hidden
+{
+  display: none ; 
+}
+
+.NoError
+{
+  margin-bottom: 40px;
+}
+
+.nom
+{
+  text-transform: uppercase ;
+}
+
+
+.student
+{
+  background-image: url("/img/student_bg.jpg") ;
+}
+.teacher
+{
+   background-image: url("/img/teacher-bg.jpg") ;
+}
+.company
+{
+  background-image: url("/img/company-bg.jpg") ;
+}
+
+
+/*raouf Styling  END */
+
+a {
+  text-decoration: none;
+  color: #1ab188;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+a:hover {
+  color: #179b77;
+}
+
+.form {
+  background: rgba(19, 35, 47, 0.8);
+  padding: 40px;
+  max-width: 600px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.tab-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+.tab-group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.tab-group li a {
+  display: block;
+  text-decoration: none;
+  padding: 15px;
+  background: rgba(160, 179, 176, 0.25);
+  color: #a0b3b0;
+  font-size: 20px;
+  float: left;
+  width: 50%;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+.tab-group li a:hover {
+  background: #179b77;
+  color: #ffffff;
+}
+.tab-group .active a {
+  background: #1ab188;
+  color: #ffffff;
+}
+
+
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+.field-wrap >label {
+  position: absolute;
+  -webkit-transform: translateY(6px);
+          transform: translateY(6px);
+  left: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  -webkit-backface-visibility: hidden;
+  pointer-events: none;
+  font-size: 22px;
+}
+.field-wrap >label .req {
+  margin: 2px;
+  color: #1ab188;
+}
+
+.field-wrap >label.active , #Justificatif  {
+  -webkit-transform: translateY(-18px);
+          transform: translateY(-18px);
+  left: 2px;
+  font-size: 14px;
+}
+.field-wrap >label.active .req {
+  opacity: 0;
+}
+
+.field-wrap >label.highlight , #Justificatif {
+  color: #ffffff;
+}
+
+.field-wrap > input, textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+
+
+.field-wrap > input:focus, textarea:focus {
+  outline: 0;
+  border-color: #1ab188 ;
+}
+
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 15px 0;
+  font-size: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #1ab188;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: #179b77;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.forgotRememberMe 
+{
+  margin-top: -20px ;
+  width: 100% ;
+  padding-bottom: 1rem ;
+}
+.forgot
+{
+  float: right;
+  display: inline-block;
+}
+#checkbox1
+{
+  float: left;
+  display: inline-block;
+}
+
+.forgotRememberMe 
+{
+  font-size: 1.2rem ;
+}
+.forgotRememberMe >label
+{
+  -webkit-user-select: none;  /* Chrome all / Safari all */
+  -moz-user-select: none;     /* Firefox all */
+  -ms-user-select: none;      /* IE 10+ */
+  user-select: none;          /* Likely future */  
+}
+
+
+
+/* STUDENT STYLING  by raouf */
+/*Styling Selectbox*/
+.drop-menu {
+  width: 100%;
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 0 0 2px rgb(204, 204, 204);
+  transition: all .5s ease;
+  position: relative;
+  font-size: 22px;
+  color:  #fff ;
+  height: 100%;
+  text-align: left ; 
+}
+.drop-menu .select {
+    cursor: pointer;
+    display: block;
+    padding: 10px
+}
+.drop-menu .select i {
+    font-size: 22px;
+    color: #888;
+    cursor: pointer;
+    transition: all .5s ease;
+    float: right
+}
+.drop-menu:hover {
+    box-shadow: 0 0 4px rgb(204, 204, 204)
+}
+
+.drop-menu.active:hover,
+.drop-menu.active {
+    box-shadow: 0 0 4px rgb(204, 204, 204);
+    border-radius: 5px 5px 0 0;
+    
+}
+.drop-menu.active .select i {
+    transform: rotate(180deg)
+}
+.drop-menu .dropeddown {
+    position: absolute;
+    background-color: rgba(255,255,255,0.7);
+    width: 100%;
+    left: 0;
+    margin-top: 1px;
+    box-shadow: 0 1px 2px rgb(204, 204, 204);
+    border-radius: 0 1px 5px 5px;
+    overflow: hidden;
+    display: none;
+    max-height: 144px;
+    overflow-y: auto;
+    z-index: 9 ; 
+    color: black ;
+}
+.drop-menu .dropeddown li {
+    padding: 10px;
+    transition: all .2s ease;
+    cursor: pointer
+} 
+.drop-menu .dropeddown {
+    padding: 0;
+    list-style: none
+}
+.drop-menu .dropeddown li:hover {
+    background-color: #673AB7;
+    color: #fff
+}
+.drop-menu .dropeddown li:active {
+    background-color: #512DA8;
+    color: #fff
+}
+
+#Selectniveau
+{
+  color: rgba(255, 255, 255, 0.5) ;
+}
+
+/* Specialités radion buttons design */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
+
+
+
+
+
+.radio-tile-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px ;
+}
+.radio-tile-group .input-container {
+  position: relative;
+  height: 3rem;
+  width: 7rem;
+  margin: 0.5rem;
+}
+.radio-tile-group .input-container .radio-button {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  cursor: pointer;
+}
+.radio-tile-group .input-container .radio-tile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #079ad9;
+  border-radius: 5px;
+  padding: 1rem;
+  transition: transform 300ms ease;
+}
+.radio-tile-group .input-container .radio-tile-label {
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #079ad9;
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile {
+  background-color: #079ad9;
+  border: 2px solid #079ad9;
+  color: white;
+  transform: scale(1.1, 1.1);
+}
+.radio-tile-group .input-container .radio-button:checked + .radio-tile .radio-tile-label {
+  color: white;
+  background-color: #079ad9;
+}
+
+/*  end Radio buttons */
+
+/* STUDENT STYLING  by raouf */
+
+/*checkbox remember me styling by raouf */
+input[type=checkbox] {
+  position: absolute;
+  opacity: 0;
+}
+input[type=checkbox] + label {
+  position: relative;
+  cursor: pointer;
+  margin-left: 1.5em;
+  margin-right: 1em;
+  color: white ;
+}
+input[type=checkbox] + label:before,
+input[type=checkbox] + label:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1em;
+  height: 1em;
+  top: 0;
+  left: -1.5em;
+}
+input[type=checkbox] + label:before {
+  border: 1px solid #bbbbbb;
+}
+input[type=checkbox]:checked + label:before {
+  background-color: #1ab188;
+  border-color: #1ab188;
+}
+input[type=checkbox] + label:hover:before {
+  border-color: #1ab188;
+}
+input[type=checkbox]:focus + label:before {
+  border-color: #1ab188;
+}
+
+input[type=checkbox] + label:before {
+  border-radius: .1em;
+}
+input[type=checkbox]:checked + label:after {
+  content: " ✓";
+  color: white;
+  text-align: center;
+}
+
+/*end styling remember me */
+
+
+/*Media Queries by raouf */ 
+  
+  @media (min-width: 300px) and (max-width:400px)
+    {
+        .field-wrap label
+        {
+          font-size: 16px ;
+        }
+        .tab-group li a
+        {
+          font-size: 16px ;
+        }
+        .button
+        {
+          font-size: 16px ;
+        }
+        .tab-content
+        {
+              font-size: 16px ;
+        }
+
+    }
+
+    @media (min-width: 50px) and (max-width:300px)
+    {
+        .field-wrap label
+        {
+          font-size: 12px ;
+        }
+        .tab-group li a
+        {
+          font-size: 12px ;
+        }
+        .button
+        {
+          font-size: 12px ;
+        }
+        .tab-content
+        {
+              font-size: 12px ;
+        }
+
+    }
+
+
+/* End Media queries */
+
+
+
+/*LOADING RESET PASSWORD*/
+
+
+.ring-2 {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 0 auto;
+    border: 4px solid #1ab188;
+    border-radius: 100%;
+}
+
+.ball-holder {
+    position: absolute;
+    width: 12px;
+    height: 45px;
+    left: 17px;
+    top: 0px;
+}
+
+.ball {
+    position: absolute;
+    top: -11px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background: #1ab188;
+}
+
+
+.load-5
+{
+  margin-top : 40px ;
+}
+
+
+
+/* =Animate the stuff
+------------------------ */
+
+
+.load-5 .ball-holder {animation: loadingE 1.3s linear infinite;}
+
+
+
+@keyframes loadingE {
+    0 {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/*END LOADING*/

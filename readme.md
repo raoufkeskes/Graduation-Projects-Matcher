@@ -7,5 +7,4 @@ Graduation_Project  It's a web app based on LARAVEL 5.4 which fixed a significan
 https://www.dropbox.com/sh/8hoccm6gs55e2x2/AAAn9qX0WBBcKe2eSVY_rR8xa?dl=0
 
 ## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT).
+[MIT license](http://opensource.org/licenses/MIT).

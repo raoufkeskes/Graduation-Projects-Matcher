@@ -18,11 +18,25 @@ https://www.dropbox.com/sh/8hoccm6gs55e2x2/AAAn9qX0WBBcKe2eSVY_rR8xa?dl=0
 - You can group ( PHP , APACHE , MYSQL ) in just one tool  lamp ( on linux )  wamp ( for windows ) and mamp ( for Mac OS ) 
 
 ## Testing 
-1) import the empty database  on your MySQL Server the file is called ( Test.sql )
-2) open your terminal on your Projecy folder 
-3) run this command : 
+1) git clone https://github.com/raoufkeskes/Graduation_Project.git projectname
+2) cd projectname
+3) composer install
+4) php artisan key:generate to regenerate secure key
+5) use test.sql as a database and edit .env file for your DB settings
+6) edit .env file for APP configuration and Email sending system :
+    you can use this email in your env configuration : 
+    ```
+    MAIL_DRIVER=smtp
+    MAIL_HOST=smtp.gmail.com
+    MAIL_PORT=587
+    MAIL_USERNAME=pfeemailtest@gmail.com
+    MAIL_PASSWORD=123456aA-
+    MAIL_ENCRYPTION=tls
+    ```
+7) run this command : 
     ``` php artisan serve ```
-4) This command will start a development server at http://localhost:8000:
+8) This command will start a development server at http://localhost:8000:
+9) Explore  Routes for more app understanding !
 
 ## License
 June,2017

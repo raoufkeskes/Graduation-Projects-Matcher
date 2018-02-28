@@ -20,9 +20,10 @@ https://www.dropbox.com/sh/8hoccm6gs55e2x2/AAAn9qX0WBBcKe2eSVY_rR8xa?dl=0
 ## Testing 
 1) import the empty database  on your MySQL Server the file is called ( Test.sql )
 2) open your terminal on your Projecy folder 
-3) run this command : php artisan serve
+3) run this command : 
+    ``` php artisan serve ```
 4) This command will start a development server at http://localhost:8000:
 
 ## License
-June , 2017
+June,2017
 [MIT license](http://opensource.org/licenses/MIT).

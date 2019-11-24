@@ -3,7 +3,8 @@
 
 
 ## About The project 
-Graduation_Project  It's a web app based on LARAVEL 5.4 which fixed a significant real problem on the Departement of Computer science its main goal was about making the interaction between the student , the professors and the companies the better possible for Graduation projects and maximizing the student chances to get rapidly a topic ( the subject ) and a promoter for it !  The Language of the app in its first version is the French .
+Graduation_Project  It's a web app based on LARAVEL 5.4 which fixed a significant real problem on the Departement of Computer science making the interaction between students , teachers (mentors) and companies the smoother and better possible for graduation projects and internships in order to find the best satisfying matching between Student and Teachers / Companies !
+The Language of the app in its first version is the French .
 
 <a href="https://ibb.co/cQnF0YN"><img src="https://i.ibb.co/GRS2yHV/Capture1.png" alt="Capture1" border="0"></a>
 <a href="https://ibb.co/Mkzpscw"><img src="https://i.ibb.co/HTcYVtw/Capture2.png" alt="Capture2" border="0"></a>
